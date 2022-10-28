@@ -6,14 +6,14 @@ if (isset($_GET['slackusername'])) {
     $age = $_GET['age'];
     $bio = $_GET['bio'];
 } else {
-    $slackusername = "Gbenga";
+    $slackusername = "Goons";
     $backend = "true";
-    $age = "56";
-    $bio = "hfhfh";
+    $age = "21";
+    $bio = "PHP backend developer with Networking and  Cybersec experience";
 }
 
 settype($slackusername, "string");
-settype($backend, "boolean");
+
 settype($age, "integer");
 settype($bio, "string");
 
