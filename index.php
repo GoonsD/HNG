@@ -1,6 +1,8 @@
 <?php
 header('Access-Control-Allow-Origin: *');
 
+header('Content-Type: application/json; charset=utf-8');
+
 header('Access-Control-Allow-Methods: GET, POST');
 
 header("Access-Control-Allow-Headers: X-Requested-With");
@@ -19,7 +21,8 @@ settype($bio, "string");
 
 $myArr = array("slackUsername" => $slackusername, "backend" => $backend, "age" => $age, "bio"=> $bio);
 
-$myJSON = json_encode($myArr);
+
+$myJSON = json_encode($myArr, JSON_FORCE_OBJECT);
 
 echo $myJSON;
 ?>
