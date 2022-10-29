@@ -22,7 +22,7 @@ settype($age, "integer");
 settype($bio, "string");
 
 
-$myArr = array("slackUsername : $slackusername", "backend : $backend", "Age : $age", "Bio : $bio");
+$myArr = array("slackUsername" => $slackusername, "backend" => $backend, "age" => $age, "bio"=> $bio);
 
 $myJSON = json_encode($myArr);
 
