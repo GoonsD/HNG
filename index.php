@@ -17,7 +17,7 @@ if (isset($_GET['slackusername'])) {
 }
 
 settype($slackusername, "string");
-
+settype($backend, "integer");
 settype($age, "integer");
 settype($bio, "string");
 
